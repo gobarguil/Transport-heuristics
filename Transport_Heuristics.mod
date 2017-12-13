@@ -1,7 +1,7 @@
 /*********************************************
  * OPL 12.7.1.0 Model
  * Author: Quentin
- * Creation Date: 6 déc. 2017 at 15:36:35
+ * Creation Date: 6 dÃ©c. 2017 at 15:36:35
  *********************************************/
 
  int nbSites= ... ;
@@ -22,5 +22,8 @@
  	
  	forall (j in N)
  	  sum (i in N) x[i][j] == 1;
+    
+  forall (i in N)
+ 	  sum (j in N) x[i][j] == 1;
   
  }
